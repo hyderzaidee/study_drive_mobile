@@ -1,0 +1,6 @@
+pageObjects\AddGradePageObjects.class
+pageObjects\CreateTimeTablePageObjects.class
+org\example\base.class
+org\example\utilities.class
+pageObjects\LoginPageObjects.class
+pageObjects\RegisterPageObjects.class

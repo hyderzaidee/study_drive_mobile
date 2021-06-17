@@ -1,0 +1,5 @@
+org\example\RegisterTests.class
+org\example\LoginTests.class
+org\example\CreateTimeTableTests.class
+org\example\AddGradeTests.class
+org\example\MainTests.class

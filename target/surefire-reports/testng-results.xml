@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="All Test Suite" duration-ms="163040" started-at="2021-06-17T09:18:25Z" finished-at="2021-06-17T09:21:08Z">
+    <groups>
+    </groups>
+    <test name="C:/Users/Haider/IdeaProjects/haider" duration-ms="163040" started-at="2021-06-17T09:18:25Z" finished-at="2021-06-17T09:21:08Z">
+      <class name="org.example.MainTests">
+        <test-method status="PASS" signature="registerOverSixteen()[pri:0, instance:org.example.MainTests@675d3402]" name="registerOverSixteen" duration-ms="37786" started-at="2021-06-17T11:18:25Z" finished-at="2021-06-17T11:19:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerOverSixteen -->
+        <test-method status="PASS" signature="registerBelowSixteen()[pri:0, instance:org.example.MainTests@675d3402]" name="registerBelowSixteen" duration-ms="34572" started-at="2021-06-17T11:19:02Z" finished-at="2021-06-17T11:19:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerBelowSixteen -->
+        <test-method status="PASS" signature="createTimeTable()[pri:0, instance:org.example.MainTests@675d3402]" name="createTimeTable" duration-ms="26528" started-at="2021-06-17T11:19:37Z" finished-at="2021-06-17T11:20:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTimeTable -->
+        <test-method status="PASS" signature="login()[pri:0, instance:org.example.MainTests@675d3402]" name="login" duration-ms="22363" started-at="2021-06-17T11:20:03Z" finished-at="2021-06-17T11:20:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="addGrade()[pri:0, instance:org.example.MainTests@675d3402]" name="addGrade" duration-ms="41778" started-at="2021-06-17T11:20:26Z" finished-at="2021-06-17T11:21:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addGrade -->
+      </class> <!-- org.example.MainTests -->
+    </test> <!-- C:/Users/Haider/IdeaProjects/haider -->
+  </suite> <!-- All Test Suite -->
+</testng-results>

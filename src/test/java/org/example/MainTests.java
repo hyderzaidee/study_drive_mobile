@@ -2,20 +2,18 @@ package org.example;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.io.IOException;
 
 public class MainTests extends base {
 
-   /* @BeforeMethod
+    @BeforeSuite
     public void beforeMethod() throws Exception
     {
+        service=startServer();
 
-    }*/
+    }
 
     @Test
     public void registerOverSixteen() throws Exception {
@@ -33,6 +31,8 @@ public class MainTests extends base {
     }
 
     @Test
+
+
     public void login() throws IOException, InterruptedException {
         capabilities("scoolio-staging-latest.apk");
         new LoginTests().Login();
@@ -55,13 +55,14 @@ public class MainTests extends base {
         quitApp();
     }
 
-   /* @AfterTest
+    @AfterSuite
     public void afterTest() throws Exception {
 
-        deleteAccount((String)config.get("email"),((String) config.get("pass")));
+       service.stop();
+        // deleteAccount((String)config.get("email"),((String) config.get("pass")));
      //   deleteAccount((String)config.get("email1"),((String) config.get("pass")));
-        quitApp();
-    }*/
+       // quitApp();
+    }
 
 
 }

@@ -2,13 +2,12 @@ package org.example;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
+import io.appium.java_client.service.local.AppiumDriverLocalService;
 import org.apache.commons.io.IOUtils;
-import org.apache.http.HttpRequest;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.http.HttpClient;
 
 import java.io.*;
 import java.net.HttpURLConnection;
@@ -17,6 +16,14 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class base {
+    public static AppiumDriverLocalService service;
+
+    public AppiumDriverLocalService startServer()
+    {
+        service=AppiumDriverLocalService.buildDefaultService();
+        service.start();
+        return service;
+    }
 
     public static Properties config;
     public static AndroidDriver<AndroidElement> driver;

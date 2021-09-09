@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-All_Test_Suite">
-                    <span>C:\Users\Haider\IdeaProjects\scoolio\testng.xml</span>
+                    <span>C:\Users\Haider\IdeaProjects\scoolio_test_android\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,27 +101,7 @@
                     <div class="method-list-content passed suite-All_Test_Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="org.example.MainTests" hash-for-method="addGrade">addGrade</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="org.example.MainTests" hash-for-method="createTimeTable">createTimeTable</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="org.example.MainTests" hash-for-method="login">login</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="org.example.MainTests" hash-for-method="registerBelowSixteen">registerBelowSixteen</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="org.example.MainTests" hash-for-method="registerOverSixteen">registerOverSixteen</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-All_Test_Suite -->
@@ -144,37 +124,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addGrade">
-                  </a> <!-- addGrade -->
-                  <span class="method-name">addGrade</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="createTimeTable">
-                  </a> <!-- createTimeTable -->
-                  <span class="method-name">createTimeTable</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="login">
                   </a> <!-- login -->
                   <span class="method-name">login</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="registerBelowSixteen">
-                  </a> <!-- registerBelowSixteen -->
-                  <span class="method-name">registerBelowSixteen</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="registerOverSixteen">
-                  </a> <!-- registerOverSixteen -->
-                  <span class="method-name">registerOverSixteen</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -182,7 +134,7 @@
         </div> <!-- panel All_Test_Suite -->
         <div panel-name="test-xml-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Haider\IdeaProjects\scoolio\testng.xml</span>
+            <span class="header-content">C:\Users\Haider\IdeaProjects\scoolio_test_android\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -193,11 +145,11 @@
     &lt;classes&gt;
       &lt;class name=&quot;org.example.MainTests&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;registerOverSixteen&quot;/&gt;
-          &lt;include name=&quot;registerBelowSixteen&quot;/&gt;
-          &lt;include name=&quot;createTimeTable&quot;/&gt;
           &lt;include name=&quot;login&quot;/&gt;
-          &lt;include name=&quot;addGrade&quot;/&gt;
+          &lt;exclude name=&quot;registerOverSixteen&quot;/&gt;
+          &lt;exclude name=&quot;registerBelowSixteen&quot;/&gt;
+          &lt;exclude name=&quot;createTimeTable&quot;/&gt;
+          &lt;exclude name=&quot;addGrade&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- org.example.MainTests --&gt;
     &lt;/classes&gt;
@@ -239,32 +191,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'addGrade')
+data.setCell(0, 1, 'login')
 data.setCell(0, 2, 'org.example.MainTests')
-data.setCell(0, 3, 41778);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'registerOverSixteen')
-data.setCell(1, 2, 'org.example.MainTests')
-data.setCell(1, 3, 37786);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'registerBelowSixteen')
-data.setCell(2, 2, 'org.example.MainTests')
-data.setCell(2, 3, 34572);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'createTimeTable')
-data.setCell(3, 2, 'org.example.MainTests')
-data.setCell(3, 3, 26528);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'login')
-data.setCell(4, 2, 'org.example.MainTests')
-data.setCell(4, 3, 22363);
+data.setCell(0, 3, 25127);
 window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 25 seconds</span>
               <div id="times-div-All_Test_Suite">
               </div> <!-- times-div-All_Test_Suite -->
             </div> <!-- times-div -->
@@ -279,9 +215,22 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">org.example.MainTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">addGrade</span>
+                <br/>
+                <span class="ignored-method-name">registerOverSixteen</span>
+                <br/>
+                <span class="ignored-method-name">createTimeTable</span>
+                <br/>
+                <span class="ignored-method-name">registerBelowSixteen</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-All_Test_Suite" class="panel">
@@ -292,24 +241,8 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">org.example.MainTests</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">registerOverSixteen</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">registerBelowSixteen</span>
-                <span class="method-start">37787 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">createTimeTable</span>
-                <span class="method-start">72360 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">98889 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">addGrade</span>
-                <span class="method-start">121252 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

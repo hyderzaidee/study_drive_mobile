@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="haider" />
+        <module name="study_drive_mobile" />
         <module name="scoolio" />
       </profile>
     </annotationProcessing>

@@ -15,53 +15,19 @@ public class MainTests extends base {
 
     }
 
-    @Test
-    public void registerOverSixteen() throws Exception {
 
-        capabilities("scoolio-staging-latest.apk");
-        new RegisterTests().registerDirectSixteen();
+    @Test
+    public void signup()throws Exception{
+        capabilities("Demo Testing_1.0_apkcombo.com");
+        new RegisterTests().signup();
         quitApp();
     }
 
-    @Test
-    public void registerBelowSixteen() throws Exception {
-        capabilities("scoolio-staging-latest.apk");
-        new RegisterTests().registerDirectBelowSixteen();
-        quitApp();
-    }
-
-    @Test
-
-
-    public void login() throws IOException, InterruptedException {
-        capabilities("scoolio-staging-latest.apk");
-        new LoginTests().Login();
-        quitApp();
-    }
-
-    @Test
-    public void createTimeTable() throws IOException {
-
-        capabilities("scoolio-staging-latest.apk");
-        new CreateTimeTableTests().CreateTimeTable();
-        quitApp();
-    }
-    @Test
-    public void addGrade() throws IOException, InterruptedException {
-
-        capabilities("scoolio-staging-latest.apk");
-        new CreateTimeTableTests().CreateTimeTable();
-        new AddGradeTests().addGrade();
-        quitApp();
-    }
 
     @AfterSuite
     public void afterTest() throws Exception {
 
-       service.stop();
-        // deleteAccount((String)config.get("email"),((String) config.get("pass")));
-     //   deleteAccount((String)config.get("email1"),((String) config.get("pass")));
-       // quitApp();
+        service.stop();
     }
 
 

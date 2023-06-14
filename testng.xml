@@ -5,11 +5,7 @@
         <classes>
             <class name="org.example.MainTests">
                 <methods>
-                    <exclude name = "registerOverSixteen"/>
-                    <exclude name = "registerBelowSixteen"/>
-                    <exclude name = "createTimeTable"/>
-                    <include name = "login"/>
-                    <exclude name = "addGrade"/>
+                    <include name = "signup"/>
                 </methods>
             </class>
         </classes>
